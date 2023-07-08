@@ -69,6 +69,10 @@ header nav{
     font-size: 20px;
     font-weight: 400;
     color: #474747;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+   color: #FD6E0A;
 }
 .menu li button{
     width: 150px;
@@ -148,7 +152,15 @@ header nav{
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
 }
+.banner-btn-left:hover{
+   background-color: transparent;
+   color:#181818;
+   border: 1px solid #FD6E0A ;
+}
+
 
 .banner-btn-right{
     border:1px solid #FD6E0A;
@@ -163,6 +175,12 @@ header nav{
     color: #FD6E0A;
     background-color: transparent;
     border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+.banner-btn-right:hover{
+    background-color: #FD6E0A;
+    color: white;
 }
 
 .banner-img img{
@@ -208,7 +226,27 @@ header nav{
 .skill-bottom{
     display: flex;
     margin-top: 30px;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
+   
+}
+
+@media only screen and (max-width: 1500px){
+    .skill-bottom{
+        flex-direction: column;
+        
+    }
+    .skill-bottom{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+    @media only screen and (max-width: 900px){
+    
+    .skill-bottom{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 
 .skill-bottom h5{
@@ -223,9 +261,7 @@ header nav{
 
 .skill-bottom div{
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
-    width: 335px;
-    height: 420px;
-    padding: 40px;
+    padding: 50px;
 }
 .skill-bottom div img{
     margin-bottom: 25px;
