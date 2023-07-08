@@ -234,11 +234,13 @@ header nav{
 @media only screen and (max-width: 1500px){
     .skill-bottom{
         flex-direction: column;
+        justify-content: center;
         
     }
     .skill-bottom{
         display: grid;
         grid-template-columns: repeat(2,1fr);
+        justify-content: center;
     }
 }
     @media only screen and (max-width: 900px){
@@ -246,6 +248,7 @@ header nav{
     .skill-bottom{
         display: grid;
         grid-template-columns: repeat(1,1fr);
+        justify-content: center;
     }
 }
 
